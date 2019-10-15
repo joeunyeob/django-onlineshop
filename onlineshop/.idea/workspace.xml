@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9be8958c-6aee-48ee-bb29-d5e45a84d9ad" name="Default Changelist" comment="" />
+    <list default="true" id="4ef3e6ce-7080-4456-8f4f-a0673e52af56" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,12 +11,12 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
-  <component name="ProjectId" id="1P5JHBzRONe1vRxdeJZ2KQ6SSoA" />
+  <component name="ProjectId" id="1SCDKHGId6vp6cm9VTOnxMK6fCo" />
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -65,13 +65,12 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="9be8958c-6aee-48ee-bb29-d5e45a84d9ad" name="Default Changelist" comment="" />
-      <created>1565157933588</created>
+      <changelist id="4ef3e6ce-7080-4456-8f4f-a0673e52af56" name="Default Changelist" comment="" />
+      <created>1571058618468</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1565157933588</updated>
-      <workItem from="1565157999424" duration="9808000" />
-      <workItem from="1565590455137" duration="3888000" />
+      <updated>1571058618468</updated>
+      <workItem from="1571058696313" duration="7809000" />
     </task>
     <servers />
   </component>
