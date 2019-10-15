@@ -1,5 +1,3 @@
-from django.shortcuts import render
-
 from django.shortcuts import render, get_object_or_404
 from .models import *
 
@@ -7,15 +5,13 @@ from .models import *
 def product_in_category(request, category_slug=None):
     current_category = None
     categories = Category.objects.all()
-    product = Product.objects.filter(available_display=True)
+    products = Product.objects.filter(available_display=True)
 
     if category_slug:
         current_category = get_object_or_404(Category, slug=category_slug)
-        product = product.filter(category=current_category)
+        products = products.filter(category=current_category)
 
-    return render(request, 'shop/list.html', {'current_category': current_category,
-                                                'categories': categories,
-                                              'product': product})
+    return render(request, 'shop/list.html', {'current_category': current_category, 'categories': categories, 'products': products})
 
 
 def product_detail(request, id, product_slug=None):
