@@ -1,5 +1,6 @@
 from decimal import Decimal
 from django.conf import settings
+
 from shop.models import Product
 
 
@@ -31,7 +32,7 @@ class Cart(object):
     def add(self, product, quantity=1, is_update=False):
         product_id = str(product.id)
         if product_id not in self.cart:
-            self.cart[product_id] = {'quantity': 0, 'price':str(product.price)}
+            self.cart[product_id] = {'quantity':0, 'price':str(product.price)}
 
         if is_update:
             self.cart[product_id]['quantity'] = quantity
@@ -52,6 +53,7 @@ class Cart(object):
 
     def clear(self):
         self.session[settings.CART_ID] = {}
+        self.session['coupon_id'] = None
         self.session.modified = True
 
     def get_product_total(self):
