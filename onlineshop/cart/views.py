@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect, get_object_or_404
 from django.views.decorators.http import require_POST
 
 from shop.models import Product
-# from coupon.forms import AddCouponForm
+from coupon.forms import AddCouponForm
 from .forms import AddProductForm
 from .cart import Cart
 
@@ -29,10 +29,7 @@ def remove(request, product_id):
 
 def detail(request):
     cart = Cart(request)
-
+    add_coupon = AddCouponForm()
     for product in cart:
-        product['quantity_form'] = AddProductForm(initial={'quantity': product['quantity'], 'is_update': True})
-
-    return render(request, 'cart/detail.html', {'cart': cart})
-
-
+        product['quantity_form'] = AddProductForm(initial={'quantity':product['quantity'], 'is_update':True})
+    return render(request, 'cart/detail.html', {'cart':cart, 'add_coupon':add_coupon})
